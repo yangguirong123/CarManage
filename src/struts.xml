@@ -1,0 +1,15 @@
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="car" namespace="/" extends="struts-default">
+		<global-allowed-methods>regex:.*</global-allowed-methods>
+
+		<action name="car_*" class="com.ygr.car.contrl.CarAction"
+			method="{1}">
+			<result type="chain">car_show</result>
+			<result name="input">/add_car.jsp</result>
+			<result name="list">/car_list.jsp</result>
+		</action>
+	</package>
+</struts>

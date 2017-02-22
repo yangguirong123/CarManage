@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-2-4 15:58:27 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ygr.car.model.Car" table="car">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="carName" type="java.lang.String">
+            <column name="carName" />
+        </property>
+        <property name="persenName" type="java.lang.String">
+            <column name="persenName" />
+        </property>
+        <property name="telephone" type="java.lang.String">
+            <column name="telephone" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="address" />
+        </property>
+        <property name="carNumber" type="java.lang.String">
+            <column name="carNumber" />
+        </property>
+    </class>
+</hibernate-mapping>
